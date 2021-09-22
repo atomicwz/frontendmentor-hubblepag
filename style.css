@@ -1,5 +1,9 @@
 
 /* Header CSS*/
+
+.container{
+    max-width: 1400px;
+}
 .header{
     font-family: 'Poppins', sans-serif;
     background: url(images/bg-hero-desktop.svg), #EBFBFF;
@@ -15,7 +19,7 @@
 .header-nav img{
     width: 11em;
     height: 29px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 .header-btn{
@@ -47,7 +51,7 @@
 .header-content{
     display:flex;
     margin-top: 100px;
-    gap: 500px;
+    justify-content: space-around;
 }
 
 .header-item{
@@ -79,6 +83,9 @@
     
 }
 
+.header-img{
+    width: 35%;
+}
 
 /* FINAL HEADER CSS*/
 
@@ -203,7 +210,7 @@
 
 
     .header-content img{
-        width: 350px;
+        width: 400px;
     }
 
 
@@ -240,16 +247,13 @@
 
 
 /* header responsivo */
-
-
     .header-content{
-        display: grid;
-        grid-template-columns: 100%;
-        gap: 0;
+        display: flex;
+        flex-direction: column;
     }
-    
     .header-item{
         margin-bottom: 20px;
+        margin-left: 0;
     }
     .header-item{
         text-align: center;
@@ -316,7 +320,67 @@
     .copy{
         margin: auto 15%;
     }
+        
 }
+
+@media (max-width:375px){
+    /* header responsivo */
+    .header-nav img{
+        width: 40%;
+
+    }
+    .header-item{
+        width: 200px;
+        align-self: center;
+    }
+    .header-btn p{
+        margin-top: 5%;
+        font-size: 15px;
+    }
+    .header-content img{
+        width: 80%;
+    }
+
+    .content-button{
+        width: 70%;
+        font-size: 13px;
+    }
+/* main-responsivo */
+    .main-content{
+        width: 80%;
+        font-size: 11px;
+        align-items: center;
+        justify-content: center;
+        }
+
+    .main-content div{
+        width: 90%;
+    }
+    .main-content img{
+        width: 70%;
+        font-size: 11px;
+    }
+    .main-content p{
+    }
+    .main-bottom{
+        width: 85%;
+    }
+
+
+    /* footer */
+
+    .copy{
+        bottom: 1%;
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+
+
 
 
 
