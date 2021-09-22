@@ -293,11 +293,12 @@
     }
 
     .main-content div{
+        width: 90%;
         order: 2;
     }
 
     .main-bottom{
-        width: 90%;
+        width: 80%;
     }
 
 
